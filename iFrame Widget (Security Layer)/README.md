@@ -1,4 +1,4 @@
-#Example in Google App Script
+# Example in Google App Script
 
 ## Sample information in the Google Sheet
 
