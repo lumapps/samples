@@ -16,8 +16,8 @@ def main(argv):
 
   service = build('lumsites', 'v1', http_auth, 'https://lumsites.appspot.com/_ah/api/discovery/v1/apis/lumsites/v1/rest')
 
-  user = service.user().get().execute()
-  print user
+  currentUser = service.user().get().execute()
+  print ('Current user email: %s' % currentUser.get('email'))
 
 if __name__ == '__main__':
   main(sys.argv)
