@@ -16,11 +16,8 @@ def main(argv):
 
   service = build('lumsites', 'v1', http_auth, 'https://lumsites.appspot.com/_ah/api/discovery/v1/apis/lumsites/v1/rest')
 
-  #list = service.instance().list().execute()
-  users = service.user().search(maxResults=30,
-                                firstName='Thai',
-                                sortOrder='registrationDate').execute()
-  print users
+  user = service.user().get().execute()
+  print user
 
 if __name__ == '__main__':
   main(sys.argv)
