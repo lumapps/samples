@@ -1,1 +1,6 @@
-## Simple examples using in python and nodeJS for both OAuth2 and wide domain access
+## Simple examples in python, nodeJS and JavaScript
+
+# Get started with:
+
+Authentication
+Basic API calls
