@@ -1,7 +1,5 @@
-## Simple examples in python, nodeJS and JavaScript
+# Simple API examples in python, nodeJS and JavaScript
 
-# Get started with:
+### Get started with:
 
-Authentication
-
-Basic API calls
+Authentication (OAuth2 and domain wide), Basic API calls, 
