@@ -1,3 +1,6 @@
+#Before you start:
+#You need to whitelist your CLIENT_ID with us. Learn more https://api.lumapps.com
+
 import httplib2
 from googleapiclient.discovery import build
 from oauth2client.client import OAuth2Credentials
@@ -24,15 +27,13 @@ accessTokenInfo = credentials.get_access_token(http)
 service = build('lumsites', 'v1', http=http,
 discoveryServiceUrl='https://lumsites.appspot.com/_ah/api/discovery/v1/apis/lumsites/v1/rest')
 
-# Get the current user
-# currentUser = service.user().get().execute()
-# print ('Current user email: %s' % currentUser.get('email'))
 
 #Step 1
 #Create a bucket for your metadata
+#Update accordingly
 bucket_body = {
-  'customer': 'your Customer_Id', #Update this with yours
-  'instance': 'your Instance_Id', #Update this with yours
+  'customer': 'your Customer_Id', 
+  'instance': 'your Instance_Id', 
   'name': {
     'en': 'New bucket name here'
   }
@@ -44,12 +45,13 @@ familyKey = bucket['familyKey']
 #Step 2
 #Mass Add metadata to your bucket
 #All you need to do is to add the metadata keywords into the metadataList array
+#Update accordingly
 metadataList = ['fill', 'this', 'array', 'with', 'all', 'the', 'metadata', 'you want to upload']
 
 for item in metadataList:
   metadata_body = {
-    'customer': 'your Customer_Id', #Update this with yours
-    'instance': 'your Instance_Id', #Update this with yours
+    'customer': 'your Customer_Id', 
+    'instance': 'your Instance_Id', 
     'name': {
       'en': item
     },
