@@ -4,7 +4,7 @@ const oauth = require('axios-oauth-client');
 const request = require('request-promise');
 const security = require('./security');
 
-// Prepare your request
+// Create a new axios instance
 // In this case, I have placed my confidential information inside an external file called "security"
 const getClientCredentials = oauth.client(axios.create(), {
   url: 'https://www.googleapis.com/oauth2/v4/token',
