@@ -37,7 +37,7 @@ post = {
   },
   'customer' : CUSTOMER_ID,
   'instance' : INSTANCE_ID,
-  'externalKey': "" , #ID of the community you are publishing to
+  'externalKey': "" , #externalKey of the community you are publishing to
   'postType': 'DEFAULT',
   'type': 'post',
   'title': {
