@@ -1,6 +1,4 @@
 #LumApps API Strategy 1: domain-wide authentication
-
-import pprint
 import sys
 
 from httplib2 import Http
@@ -10,7 +8,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 def main(argv):
   scopes = ['https://www.googleapis.com/auth/userinfo.email']
   credentials = ServiceAccountCredentials.from_json_keyfile_name('service-account.json', scopes) #Point to your file
-  credentials = credentials.create_delegated(email) #Use any email in your domain (preferably yours)
+  credentials = credentials.create_delegated('email') #Use any email in your domain (preferably yours)
 
   http_auth = credentials.authorize(Http())
 
