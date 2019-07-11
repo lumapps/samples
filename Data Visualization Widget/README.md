@@ -23,7 +23,7 @@ Returning
 
 will result in the following pie chart:
 
-![pie chart](../images/pie.png)
+![pie chart](./images/pie.png)
 
 ## Table
 Returning
@@ -32,7 +32,7 @@ Returning
 
 will result in the following table:
 
-![data table](../images/table.png)
+![data table](./images/table.png)
 
 ## html
 Returning
@@ -41,4 +41,4 @@ Returning
 
 will be interpreted as:
 
-![raw html](../images/html.png)
+![raw html](./images/html.png)
