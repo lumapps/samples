@@ -53,7 +53,7 @@ If needed, update the path to your executable file, and add/remove "%X" paramete
 3. Double click on it
 4. Accept the security prompts
 
-[Using your custom scheme in html links](##Using-your-custom-scheme-in-html-links)
+[Using your custom scheme in html links](#Using-your-custom-scheme-in-html-links)
 
 
 ### Apple OsX
@@ -113,7 +113,7 @@ At the end of the file, before the closing tags `</dict></plist>`, insert the fo
 
 *Nothing should happen, but your custom protocal should have been registered.*
 
-[Using your custom scheme in html links](##Using-your-custom-scheme-in-html-links)
+[Using your custom scheme in html links](#Using-your-custom-scheme-in-html-links)
 
 
 ### Linux (debian based)
@@ -167,7 +167,7 @@ $ sudo chmod +x /usr/share/handlers/vscode-handler
 $ xdg-mime default /usr/share/applications/vscode-handler.desktop x-scheme-handler/lumapps-vscode
 ```
 
-[Using your custom scheme in html links](##Using-your-custom-scheme-in-html-links)
+[Using your custom scheme in html links](#Using-your-custom-scheme-in-html-links)
 
 
 ## Using your custom scheme in html links
