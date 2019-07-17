@@ -78,8 +78,11 @@ end open location
 Save this file as an **Application**
 
 2. Add the custom scheme to the launcher
+
     2.1. Locate the saved file on your disk
+
     2.2. Right click -> Show Package Contents
+
     2.3. Edit `Contents/info.plist`
 
 At the end of the file, before the closing tags `</dict></plist>`, insert the following:
@@ -103,7 +106,9 @@ At the end of the file, before the closing tags `</dict></plist>`, insert the fo
 **Notice** the string `lumapps-vscode`, it's your custom scheme.
 
 3. Register the custom scheme
+
     3.1. Save this file.
+
     3.2. Double click on it to execute it.
 
 *Nothing should happen, but your custom protocal should have been registered.*
