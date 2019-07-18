@@ -9,19 +9,19 @@ A Uniform Resource Identifier ([URI](https://en.wikipedia.org/wiki/Uniform_Resou
 
 A common (sub-)type of URI is the Uniform Resource Locator (URL) which can be used - *among other things* - to access a web page over the `http` protocol.
 
-**i.e**: `https://www.lumapps.com` where `https` is the protocol and `www.lumapps.com` the network resource.
+**example**: `https://www.lumapps.com` where `https` is the protocol and `www.lumapps.com` the network resource.
 
 ## URL schemes
 
-In the previous example, the URL *scheme* is `https://`. But the use of URL is not limited to the web, and many more *schemes* can be defined.
+In the previous example, the URL *scheme* is `https://`. But the use of URLs is not limited to the web, and many more *schemes* can be defined.
 
-Most modern softwares comes with pre-defined custom schemes; that allow you to interact with the software through URL.
+Most modern softwares comes with pre-defined custom schemes, that allow you to interact with the software through URL.
 
 [Microsoft Office](https://docs.microsoft.com/en-us/office/client-developer/office-uri-schemes)™ productivity applications for instance, allows you to open a document in *edit|view|from_template* modes using *ms-word, ms-powerpoint, ms-excel, ms-visio, ms-access, ms-project, ms-publisher, ms-spd or ms-infopath*.
 
 ## Defining custom schemes
 
-If your favorite software does not provide a custom url scheme, you can define it yourself. In the following examples, we will be using Microsoft Visual Studio code, but the explanations should work for *any* software.
+If your favorite software does not provide a custom URL scheme, you can define it yourself. In the following examples, we will use Microsoft Visual Studio code, but this explanations can work for *any* software.
 
 #### Disclamer: 
 VSCode already provides `vscode` custom scheme, we will juste be defining a second one, `lumapps-vscode` for the sake of the example.
@@ -30,7 +30,7 @@ VSCode already provides `vscode` custom scheme, we will juste be defining a seco
 
 [credits](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767914(v=vs.85))
 
-1. Create a .reg file
+1. Create a .reg file.
 ```
 Windows Registry Editor Version 5.00
 
@@ -49,20 +49,20 @@ Windows Registry Editor Version 5.00
 
 If needed, update the path to your executable file, and add/remove "%X" parameters.
 
-2. Save the file
-3. Double click on it
-4. Accept the security prompts
+2. Save the file.
+3. Double click on it.
+4. Accept the security prompts.
 
 [Using your custom scheme in html links](#Using-your-custom-scheme-in-html-links)
 
 
-### Apple OsX
+### macOS
 
 [credits](https://apple.stackexchange.com/a/253202)
 
 1. Create the launcher
 
-Using the built in script editor, create an AppleScript containing:
+Using the built-in script editor, create an AppleScript containing:
 
 ```AppleScript
 <!-- Remove scheme from url (lumapps-vscode://)  
@@ -75,15 +75,15 @@ on open location this_URL
 end open location
 ```
 
-Save this file as an **Application**
+Save this file as an **Application**.
 
-2. Add the custom scheme to the launcher
+2. Add the custom scheme to the launcher.
 
-    2.1. Locate the saved file on your disk
+    2.1. Locate the saved file on your disk.
 
-    2.2. Right click -> Show Package Contents
+    2.2. Right click -> Show Package Contents.
 
-    2.3. Edit `Contents/info.plist`
+    2.3. Edit `Contents/info.plist`.
 
 At the end of the file, before the closing tags `</dict></plist>`, insert the following:
 
@@ -103,9 +103,9 @@ At the end of the file, before the closing tags `</dict></plist>`, insert the fo
 </array>
 ```
 
-**Notice** the string `lumapps-vscode`, it's your custom scheme.
+**Notice** the string `lumapps-vscode`, this is your custom scheme.
 
-3. Register the custom scheme
+3. Register the custom scheme.
 
     3.1. Save this file.
 
@@ -120,7 +120,7 @@ At the end of the file, before the closing tags `</dict></plist>`, insert the fo
 
 [credits](https://askubuntu.com/a/919825)
 
-1. Create a .desktop file
+1. Create a .desktop file.
 ``` bash
 # /usr/share/applications/vscode-handler.desktop
 [Desktop Entry]
@@ -138,12 +138,12 @@ Name[en_US]=LumApps VSCode URL Handler
 
 **Notice** the string `lumapps-vscode`, it's your custom scheme.
 
-2. Update the MIME-types database
+2. Update the MIME-types database.
 ``` bash
-$ sudo update-desktop-database
+$ sudo update-desktop-database.
 ```
 
-3. Create the handler file
+3. Create the handler file.
 
 ``` bash
 # /usr/share/handlers/vscode-handler
@@ -157,12 +157,12 @@ and interpret the parameters
 code $request # launch vscode
 ```
 
-4. Make it executable
+4. Make it executable.
 ``` bash
 $ sudo chmod +x /usr/share/handlers/vscode-handler
 ```
 
-5. Register the mime-type handler
+5. Register the mime-type handler.
 ``` bash
 $ xdg-mime default /usr/share/applications/vscode-handler.desktop x-scheme-handler/lumapps-vscode
 ```
@@ -193,15 +193,15 @@ The use cases that can be implemented using custom url schemes are only limited 
 - Your coding skills (i.e. are you abble to parse and interpret the url)
 
 Your handler *could*:
-- Simply open the application
-- Open a file in the application
-- Open a file in the application and go the a given line
-- Create a new file in the application based on a given template
+- Simply open the application.
+- Open a file in the application.
+- Open a file in the application and go the a given line.
+- Create a new file in the application based on a given template.
 - etc.
 
 ## Security warning ⚠️
 
-This is just a friendly reminder that allowing applications to be opened - *Even more so
+This is a friendly reminder that allowing applications to be opened - *Even more so
 with interpreted parameters* - by clicking on a link can present a risk for the safety of your information system.
 
-The risk level depends on the program you expose, and the arguments you authorize.
+The level of risk depends on the program you expose, and the arguments you authorize.
