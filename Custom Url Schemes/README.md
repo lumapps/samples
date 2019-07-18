@@ -1,4 +1,4 @@
-# Opening applications from URLs
+# Opening local applications from URLs
 
 ![ScreenCapture](./grid_with_vs_code.png)
 <div style="text-align: right">A link to open Visual Studio Code in the LumApps Bookmarked Apps dropdown</div>
