@@ -21,7 +21,7 @@ Most modern softwares comes with pre-defined custom schemes, that allow you to i
 
 ## Defining custom schemes
 
-If your favorite software does not provide a custom URL scheme, you can define it yourself. In the following examples, we will use Microsoft Visual Studio code, but this explanations can work for *any* software.
+If your favorite software does not provide a custom URL scheme, you can define it yourself. In the following examples, we will use Microsoft Visual Studio code, but these explanations can work for *any* software.
 
 #### Disclamer: 
 VSCode already provides `vscode` custom scheme, we will juste be defining a second one, `lumapps-vscode` for the sake of the example.
