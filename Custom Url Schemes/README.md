@@ -45,7 +45,7 @@ Windows Registry Editor Version 5.00
 @="\"C:\\Users\\Lumapps\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"%1\""
 ```
 
-**Notice** the string `lumapps-vscode`, it's your custom scheme. 
+**Notice** the string `lumapps-vscode`, this is your custom scheme. 
 
 If needed, update the path to your executable file, and add/remove "%X" parameters.
 
@@ -136,7 +136,7 @@ Categories=TextEditor;Development;Utility;
 Name[en_US]=LumApps VSCode URL Handler
 ```
 
-**Notice** the string `lumapps-vscode`, it's your custom scheme.
+**Notice** the string `lumapps-vscode`, this is your custom scheme.
 
 2. Update the MIME-types database.
 ``` bash
