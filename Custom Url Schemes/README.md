@@ -1,4 +1,4 @@
-# Opening applications from URLs
+# Opening local applications from URLs
 
 ![ScreenCapture](./grid_with_vs_code.png)
 <div style="text-align: right">A link to open Visual Studio Code in the LumApps Bookmarked Apps dropdown</div>
@@ -205,3 +205,4 @@ This is a friendly reminder that allowing applications to be opened - *Even more
 with interpreted parameters* - by clicking on a link can present a risk for the safety of your information system.
 
 The level of risk depends on the program you expose, and the arguments you authorize.
+
