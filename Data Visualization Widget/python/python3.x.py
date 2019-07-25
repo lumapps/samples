@@ -59,17 +59,17 @@ app = Flask(__name__)
 @app.route("/html")
 @is_data_viz_call
 def html():
-    return make_response("<ul><li>Résultat 8</li><li>Résultat 1</li><ul>")
+    return make_response("<ul><li>Result 8</li><li>Result 1</li><ul>")
 
 @app.route("/pie")
 @is_data_viz_call
 def pie():
-    return make_response("Janvier,Février,Mars,Avril,Mai\n193,284,413,440,137")
+    return make_response("January,February,March,April,May\n193,284,413,440,137")
 
 @app.route("/table")
 @is_data_viz_call
 def table():
-    return make_response("Magasin,CA,Ventes\nMetz,73127,764\nRennes,148076,521")
+    return make_response("Store,Turnover,Sales\nParis,73127,764\nNew York,148076,521")
 
 if __name__ == "__main__":
     app.run(threaded=True)
