@@ -19,7 +19,7 @@ Once validated, you can answer the call with the data you want to display in the
 ## Pie chart
 Returning
 
-`Janvier,Février,Mars,Avril,Mai\n193,284,413,440,137`
+`January,February,March,April,May\n193,284,413,440,137`
 
 will result in the following pie chart:
 
@@ -28,7 +28,7 @@ will result in the following pie chart:
 ## Table
 Returning
 
-`Magasin,CA,Ventes\nMetz,73127,764\nRennes,148076,521`
+`Store,Turnover,Sales\nParis,73127,764\nNew York,148076,521`
 
 will result in the following table:
 
@@ -37,7 +37,7 @@ will result in the following table:
 ## html
 Returning
 
-`<ul><li>Résultat 8</li><li>Résultat 1</li><ul>`
+`<ul><li>Result 8</li><li>Result 1</li><ul>`
 
 will be interpreted as:
 
