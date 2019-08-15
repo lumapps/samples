@@ -8,7 +8,7 @@ The Data Visualization Widget uses a server side call made by LumApps to the pro
 
 To protect your data from non authorized readers, the calls made by LumApps are all signed.
 
-You must validate the call origin using the **shared secret** provided by LumApps support team and the following workflow:
+You must validate the call origin using the **shared secret** (request it by opening a ticket to https://support.lumaps.com and providing your Customer ID) and the following workflow:
 
 ![headers validation](https://user-images.githubusercontent.com/29229113/43732908-89eca07e-9978-11e8-859c-cbfbdf8bbb31.png)
 
